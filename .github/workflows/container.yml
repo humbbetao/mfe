@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
+      env:
+      ACTIONS_ALLOW_UNSECURE_COMMANDS: true
+
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
