@@ -8,4 +8,3 @@ export default ()=>{
     }, [])
     return <div ref={ref}> </div>
 }
-console.log(mount)
