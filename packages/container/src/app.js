@@ -1,11 +1,11 @@
 import React from 'react'
 import MarketingAPP from './components/MarketingApp'
 
-export default ()=>{
-    return 
-        <div>
+export default ()=> {
+    return   ( <div>
                 <h1> hi there!!!!</h1>
             <hr/>
             <MarketingAPP/>
         </div>
+    )
 }
