@@ -14,7 +14,7 @@ export default ()=>{
                     {  
                       history.push(nextPathName)
                     }
-                }
+                },
         }) 
         history.listen(onParentNavigate) 
     }, [])
