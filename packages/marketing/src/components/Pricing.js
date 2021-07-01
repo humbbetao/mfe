@@ -19,9 +19,10 @@ function Copyright() {
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
         Your Website
-      </Link>{' '}
+      </Link>
+      {' '}
       {new Date().getFullYear()}
-      {'.'}
+      .
     </Typography>
   );
 }
@@ -143,7 +144,7 @@ export default function Pricing() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
+    <>
       {/* Hero unit */}
       <Container maxWidth="sm" component="main" className={classes.heroContent}>
         <Typography
@@ -190,7 +191,8 @@ export default function Pricing() {
                 <CardContent>
                   <div className={classes.cardPricing}>
                     <Typography component="h2" variant="h3" color="textPrimary">
-                      ${tier.price}
+                      $
+                      {tier.price}
                     </Typography>
                     <Typography variant="h6" color="textSecondary">
                       /mo
@@ -249,6 +251,6 @@ export default function Pricing() {
         </Box>
       </Container>
       {/* End footer */}
-    </React.Fragment>
+    </>
   );
 }

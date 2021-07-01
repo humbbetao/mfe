@@ -18,9 +18,10 @@ function Copyright() {
       {'Copyright © '}
       <Link color="inherit" to="/">
         Your Website
-      </Link>{' '}
+      </Link>
+      {' '}
       {new Date().getFullYear()}
-      {'.'}
+      .
     </Typography>
   );
 }
@@ -105,7 +106,7 @@ export default function SignIn({ onSignIn }) {
           </Button>
           <Grid container>
             <Grid item>
-              <Link to="/auth/signup">{"Don't have an account? Sign Up"}</Link>
+              <Link to="/auth/signup">Don't have an account? Sign Up</Link>
             </Grid>
           </Grid>
         </form>

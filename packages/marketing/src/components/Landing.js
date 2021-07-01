@@ -17,9 +17,10 @@ function Copyright() {
       {'Copyright © '}
       <MaterialLink component={Link} to="/" color="inherit">
         Your Website
-      </MaterialLink>{' '}
+      </MaterialLink>
+      {' '}
       {new Date().getFullYear()}
-      {'.'}
+      .
     </Typography>
   );
 }
@@ -67,7 +68,7 @@ export default function Album() {
   const classes = useStyles();
 
   return (
-    <React.Fragment>
+    <>
       <main>
         {/* Hero unit */}
         <div className={classes.heroContent}>
@@ -161,6 +162,6 @@ export default function Album() {
         <Copyright />
       </footer>
       {/* End footer */}
-    </React.Fragment>
+    </>
   );
 }

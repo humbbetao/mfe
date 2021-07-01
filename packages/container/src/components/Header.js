@@ -64,7 +64,7 @@ export default function Header({ isSignedIn, onSignOut }) {
   };
 
   return (
-    <React.Fragment>
+    <>
       <AppBar
         position="static"
         color="default"
@@ -93,6 +93,6 @@ export default function Header({ isSignedIn, onSignOut }) {
           </Button>
         </Toolbar>
       </AppBar>
-    </React.Fragment>
+    </>
   );
 }
